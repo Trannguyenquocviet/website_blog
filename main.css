@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;    
+}
+
+/* header style */
+header{
+    background:#FFFF;
+    color:black;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    min-height:  70px;
+    border-bottom: #474747 1px solid;
+    text-align: center;
+}
+
+header img{
+    border-radius: 150px;
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header li {
+    display: inline;
+    padding: 0 100px;
+}
+
+header li a {
+    color: #acacac;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu chữ */
+}
+
+header li a:hover {
+    color: #000000; /* Màu chữ khi di chuột qua các thẻ li */
+}
+
+/* Đặt màu mặc định cho thẻ đang active */
+header li.active a {
+    color: #000000; /* Màu khi liên kết đang ở trang hiện tại */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav {
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 10px;
+}
+
+
+.slogan {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555; /* Màu sắc cho slogan */
+}
+
+/* Main style */
+main{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.posts{
+    flex:4;
+    padding-top: 20px;
+}
+
+.post{
+    background:white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post h2{
+    margin-bottom: 10px;
+}
+
+.sidebar{
+    flex: 0 0 250px; /* Độ rộng cố định là 250px */
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.sidebar h3{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000; /* Đường gạch ngang dưới */
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li{
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+    width: 100%; /* Để các mục danh sách chiếm toàn bộ chiều rộng của sidebar */
+    text-align: left; /* Căn lề trái cho các mục danh sách */
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3); /* Nét gạch đứt mờ */
+}
+
+.sidebar li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    display: block; /* Biến mỗi liên kết thành phần block để chiếm toàn bộ chiều rộng của thẻ li */
+}
+
+.sidebar li a:hover {
+    color: #62a9ec;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-container h3 {
+    margin-bottom: 15px;
+    color: #0779e4;
+}
+
+.footer-container p{
+    font-size: 14px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact h3 {
+    margin-bottom: 10px; /* Adjust as necessary */
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    display: flex; /* Sử dụng flexbox để các phần tử con căn chỉnh với nhau */
+    align-items: center; /* Căn các phần tử con theo trục dọc */
+    padding-left: 135px;
+}
+
+.footer-contact ul li strong {
+    font-weight: bold;
+    color: #333;
+    display: inline-block; /* Cho phép căn lề trái dễ dàng */
+}
+
+.footer-contact ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 200px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px; /* Adjust as necessary */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: flex;
+    margin-bottom: 10px;    
+}
+
+.footer-links ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; /* or your desired color */
+    font-size: 1em; /* or your desired font size */
+    
+}
+
+.footer-links ul li img {
+    margin-right: 10px; /* or your desired margin */
+    width: 24px; /* or your desired width */
+    height: 24px; /* or your desired height */
+}
+
+.footer-social ul {
+    list-style: none;
+    padding-left: 170px;
+}
+
+.footer-social ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-social ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; /* or your desired color */
+    font-size: 1em; /* or your desired font size */
+}
+
+.footer-social ul li img {
+    margin-right: 10px; /* or your desired margin */
+    width: 24px; /* or your desired width */
+    height: 24px; /* or your desired height */
+}
+
+
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    background: #0779e4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background: #055bb5;
+}
+
+
+/* Trang About */
+.Link_about {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.Link_about img {
+    margin: 10px 0;
+}
+
+.Link_about h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.Link_about p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Trang Contact */
+.contact-info, .contact-form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-bottom: 2px solid #62a9ec;
+    display: inline-block;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+    color: #62a9ec;
+}
+
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form .form-group label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    display: inline-block;
+    background: #62a9ec;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #4791db;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="main.css"> <!-- Nếu có stylesheet -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Header content (logo, title, navigation) -->
+            <img src="MIB-775.PNG" alt="Ảnh cá nhân của tôi">
+            <h1>TRẦN NGUYỄN QUỐC VIỆT</h1>
+            <p>Thiết lập thói quen - Phát triển bản thân mỗi ngày!</p>
+            <nav>
+                <ul>
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li> <!-- Liên kết đang ở trong trang contact -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="contact-info">
+            <h2>Liên Hệ</h2>
+            <p>
+                Nếu bạn có bất kỳ câu hỏi hoặc phản hồi nào, hãy liên hệ với tôi qua các thông tin dưới đây. Tôi rất mong nhận được phản hồi từ các bạn!
+            </p>
+            <ul>
+                <li><i class="fas fa-phone"></i> <strong>Số điện thoại:</strong> 0784476622</li>
+                <li><i class="fas fa-envelope"></i> <strong>Email:</strong> viettran.240603@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Địa chỉ:</strong> Tỉnh Thừa Thiên Huế, Việt Nam</li>
+            </ul>
+        </section>
+        <section class="contact-form">
+            <h2>Gửi tin nhắn cho tôi</h2>
+            <form action="mailto:viettran.240603@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email của bạn:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <li>Số điện thoại: +84 784 476 622</li>
+                    <li>Email: <a href="mailto:yourname@example.com"> viettran.240603@gmail.com</a></li>
+                    <li>Địa chỉ: Phường Thuận An, TP.Huế</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Trang liên kết</h3>
+                <ul>
+                    <li><a href="index.html"><img src="house.png" alt="Home"> Home</a></li>
+                    <li><a href="about.html"><img src="about.png" alt="About"> About</a></li>
+                    <li><a href="blog.html"><img src="blog.png" alt="Blog"> Blog</a></li>
+                    <li><a href="contact.html"><img src="contacts.png" alt="Contact"> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Mạng xã hội</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100008465040659"><img src="facebook.png" alt="Facebook">Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@quocviet_tth"><img src="tik-tok.png" alt="Tiktok">Tiktok</a></li>
+                    <li><a href="https://www.instagram.com/quoc.viettn/"><img src="instagram.png" alt="Instagram">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/tm%C4%91t-tr%E1%BA%A7n-nguy%E1%BB%85n-qu%E1%BB%91c-vi%E1%BB%87t-730266291/"><img src="linkedin.png" alt="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
